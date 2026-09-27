@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# —— 过程性产物 / 实验工具：不进公开仓库（只留本地）——
+CHANGELOG.md
+assets/
+references/坑库.md
+references/回归集.md
+references/评测口径.md
+评测脚本-豆包.py
