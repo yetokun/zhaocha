@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    background: #FCF9F3;
+    color: #2A2620;
+    font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 84px;
+  }
+  .left { max-width: 420px; }
+  .logo { font-size: 144px; font-weight: 900; color: #2A2620; line-height: 0.95; letter-spacing: 8px; }
+  .rule { width: 76px; height: 7px; background: #C4553A; border-radius: 4px; margin: 28px 0 24px; }
+  .sub { font-size: 31px; color: #413B32; letter-spacing: 1px; }
+  .tag { margin-top: 20px; font-size: 20px; color: #9C9382; letter-spacing: 1px; }
+  .right { width: 560px; }
+  .cap { font-size: 19px; color: #9C9382; margin-bottom: 22px; letter-spacing: 1px; }
+  .items { list-style: none; }
+  .items li {
+    position: relative; padding-left: 24px; margin-bottom: 15px;
+    font-size: 22px; color: #413B32; line-height: 1.45; letter-spacing: .3px;
+  }
+  .items li::before {
+    content: ""; position: absolute; left: 0; top: 12px;
+    width: 9px; height: 9px; border-radius: 50%; background: #C4553A;
+  }
+  .items b { color: #2A2620; font-weight: 800; }
+  .foot { position: absolute; left: 84px; bottom: 42px; font-size: 18px; color: #9C9382; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+  <div class="left">
+    <div class="logo">找茬</div>
+    <div class="rule"></div>
+    <div class="sub">专治 AI 只会夸你</div>
+    <div class="tag">不提升智商，提升纪律</div>
+  </div>
+  <div class="right">
+    <div class="cap">它会做的五件事</div>
+    <ul class="items">
+      <li><b>逼它去查</b> —— 标来源与置信度</li>
+      <li><b>标不确定</b> —— “未核实” ≠ “不存在”</li>
+      <li><b>附检索范围</b> —— 查了啥 / 没查啥</li>
+      <li><b>挖隐含假设</b> —— 反例与盲点、验证动作</li>
+      <li><b>独立审查</b> —— 换模型，不自己审自己</li>
+    </ul>
+  </div>
+  <div class="foot">github.com/yetokun/zhaocha · MIT</div>
+</body>
+</html>
